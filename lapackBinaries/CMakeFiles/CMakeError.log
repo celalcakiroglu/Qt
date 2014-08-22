@@ -1,0 +1,166 @@
+Fortran EXT_ETIME does not exist. 
+ Change Dir: E:/Program Files/Work/created by me/QT/lapackBinaries/INSTALL
+
+Run Build Command:C:/MinGW/bin/mingw32-make.exe "secondtst_EXT_ETIME"
+Scanning dependencies of target secondtst_EXT_ETIME
+[ 50%] Building Fortran object CMakeFiles/secondtst_EXT_ETIME.dir/second_EXT_ETIME.f.obj
+[100%] Building Fortran object CMakeFiles/secondtst_EXT_ETIME.dir/secondtst.f.obj
+Linking Fortran executable secondtst_EXT_ETIME.exe
+CMakeFiles\secondtst_EXT_ETIME.dir/objects.a(second_EXT_ETIME.f.obj):second_EXT_ETIME.f:(.text+0xd): undefined reference to `etime_'
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\secondtst_EXT_ETIME.dir\build.make:97: recipe for target 'secondtst_EXT_ETIME.exe' failed
+mingw32-make.exe[3]: *** [secondtst_EXT_ETIME.exe] Error 1
+CMakeFiles\Makefile2:62: recipe for target 'CMakeFiles/secondtst_EXT_ETIME.dir/all' failed
+mingw32-make.exe[2]: *** [CMakeFiles/secondtst_EXT_ETIME.dir/all] Error 2
+CMakeFiles\Makefile2:75: recipe for target 'CMakeFiles/secondtst_EXT_ETIME.dir/rule' failed
+mingw32-make.exe[1]: *** [CMakeFiles/secondtst_EXT_ETIME.dir/rule] Error 2
+Makefile:108: recipe for target 'secondtst_EXT_ETIME' failed
+mingw32-make.exe: *** [secondtst_EXT_ETIME] Error 2
+ 
+Fortran EXT_ETIME_ does not exist. 
+ Change Dir: E:/Program Files/Work/created by me/QT/lapackBinaries/INSTALL
+
+Run Build Command:C:/MinGW/bin/mingw32-make.exe "secondtst_EXT_ETIME_"
+Scanning dependencies of target secondtst_EXT_ETIME_
+[ 50%] Building Fortran object CMakeFiles/secondtst_EXT_ETIME_.dir/second_EXT_ETIME_.f.obj
+[100%] Building Fortran object CMakeFiles/secondtst_EXT_ETIME_.dir/secondtst.f.obj
+Linking Fortran executable secondtst_EXT_ETIME_.exe
+CMakeFiles\secondtst_EXT_ETIME_.dir/objects.a(second_EXT_ETIME_.f.obj):second_EXT_ETIME_.f:(.text+0xd): undefined reference to `etime__'
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\secondtst_EXT_ETIME_.dir\build.make:97: recipe for target 'secondtst_EXT_ETIME_.exe' failed
+mingw32-make.exe[3]: *** [secondtst_EXT_ETIME_.exe] Error 1
+CMakeFiles\Makefile2:98: recipe for target 'CMakeFiles/secondtst_EXT_ETIME_.dir/all' failed
+mingw32-make.exe[2]: *** [CMakeFiles/secondtst_EXT_ETIME_.dir/all] Error 2
+CMakeFiles\Makefile2:111: recipe for target 'CMakeFiles/secondtst_EXT_ETIME_.dir/rule' failed
+mingw32-make.exe[1]: *** [CMakeFiles/secondtst_EXT_ETIME_.dir/rule] Error 2
+mingw32-make.exe: *** [secondtst_EXT_ETIME_] Error 2
+Makefile:121: recipe for target 'secondtst_EXT_ETIME_' failed
+ 
+Fortran EXT_ETIME does not exist. 
+ Change Dir: E:/Program Files/Work/created by me/QT/lapackBinaries/INSTALL
+
+Run Build Command:C:/MinGW/bin/mingw32-make.exe "secondtst_EXT_ETIME"
+Linking Fortran executable secondtst_EXT_ETIME.exe
+CMakeFiles\secondtst_EXT_ETIME.dir/objects.a(second_EXT_ETIME.f.obj):second_EXT_ETIME.f:(.text+0xd): undefined reference to `etime_'
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\secondtst_EXT_ETIME.dir\build.make:97: recipe for target 'secondtst_EXT_ETIME.exe' failed
+mingw32-make.exe[3]: *** [secondtst_EXT_ETIME.exe] Error 1
+CMakeFiles\Makefile2:62: recipe for target 'CMakeFiles/secondtst_EXT_ETIME.dir/all' failed
+mingw32-make.exe[2]: *** [CMakeFiles/secondtst_EXT_ETIME.dir/all] Error 2
+CMakeFiles\Makefile2:75: recipe for target 'CMakeFiles/secondtst_EXT_ETIME.dir/rule' failed
+mingw32-make.exe[1]: *** [CMakeFiles/secondtst_EXT_ETIME.dir/rule] Error 2
+Makefile:108: recipe for target 'secondtst_EXT_ETIME' failed
+mingw32-make.exe: *** [secondtst_EXT_ETIME] Error 2
+ 
+Fortran EXT_ETIME_ does not exist. 
+ Change Dir: E:/Program Files/Work/created by me/QT/lapackBinaries/INSTALL
+
+Run Build Command:C:/MinGW/bin/mingw32-make.exe "secondtst_EXT_ETIME_"
+Linking Fortran executable secondtst_EXT_ETIME_.exe
+CMakeFiles\secondtst_EXT_ETIME_.dir/objects.a(second_EXT_ETIME_.f.obj):second_EXT_ETIME_.f:(.text+0xd): undefined reference to `etime__'
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\secondtst_EXT_ETIME_.dir\build.make:97: recipe for target 'secondtst_EXT_ETIME_.exe' failed
+mingw32-make.exe[3]: *** [secondtst_EXT_ETIME_.exe] Error 1
+CMakeFiles\Makefile2:98: recipe for target 'CMakeFiles/secondtst_EXT_ETIME_.dir/all' failed
+mingw32-make.exe[2]: *** [CMakeFiles/secondtst_EXT_ETIME_.dir/all] Error 2
+CMakeFiles\Makefile2:111: recipe for target 'CMakeFiles/secondtst_EXT_ETIME_.dir/rule' failed
+mingw32-make.exe[1]: *** [CMakeFiles/secondtst_EXT_ETIME_.dir/rule] Error 2
+Makefile:121: recipe for target 'secondtst_EXT_ETIME_' failed
+mingw32-make.exe: *** [secondtst_EXT_ETIME_] Error 2
+ 
+Fortran EXT_ETIME does not exist. 
+ Change Dir: E:/Program Files/Work/created by me/QT/lapackBinaries/INSTALL
+
+Run Build Command:C:/MinGW/bin/mingw32-make.exe "secondtst_EXT_ETIME"
+Linking Fortran executable secondtst_EXT_ETIME.exe
+CMakeFiles\secondtst_EXT_ETIME.dir/objects.a(second_EXT_ETIME.f.obj):second_EXT_ETIME.f:(.text+0xd): undefined reference to `etime_'
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\secondtst_EXT_ETIME.dir\build.make:97: recipe for target 'secondtst_EXT_ETIME.exe' failed
+mingw32-make.exe[3]: *** [secondtst_EXT_ETIME.exe] Error 1
+CMakeFiles\Makefile2:62: recipe for target 'CMakeFiles/secondtst_EXT_ETIME.dir/all' failed
+mingw32-make.exe[2]: *** [CMakeFiles/secondtst_EXT_ETIME.dir/all] Error 2
+CMakeFiles\Makefile2:75: recipe for target 'CMakeFiles/secondtst_EXT_ETIME.dir/rule' failed
+mingw32-make.exe[1]: *** [CMakeFiles/secondtst_EXT_ETIME.dir/rule] Error 2
+Makefile:108: recipe for target 'secondtst_EXT_ETIME' failed
+mingw32-make.exe: *** [secondtst_EXT_ETIME] Error 2
+ 
+Fortran EXT_ETIME_ does not exist. 
+ Change Dir: E:/Program Files/Work/created by me/QT/lapackBinaries/INSTALL
+
+Run Build Command:C:/MinGW/bin/mingw32-make.exe "secondtst_EXT_ETIME_"
+Linking Fortran executable secondtst_EXT_ETIME_.exe
+CMakeFiles\secondtst_EXT_ETIME_.dir/objects.a(second_EXT_ETIME_.f.obj):second_EXT_ETIME_.f:(.text+0xd): undefined reference to `etime__'
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\secondtst_EXT_ETIME_.dir\build.make:97: recipe for target 'secondtst_EXT_ETIME_.exe' failed
+mingw32-make.exe[3]: *** [secondtst_EXT_ETIME_.exe] Error 1
+CMakeFiles\Makefile2:98: recipe for target 'CMakeFiles/secondtst_EXT_ETIME_.dir/all' failed
+mingw32-make.exe[2]: *** [CMakeFiles/secondtst_EXT_ETIME_.dir/all] Error 2
+CMakeFiles\Makefile2:111: recipe for target 'CMakeFiles/secondtst_EXT_ETIME_.dir/rule' failed
+mingw32-make.exe[1]: *** [CMakeFiles/secondtst_EXT_ETIME_.dir/rule] Error 2
+Makefile:121: recipe for target 'secondtst_EXT_ETIME_' failed
+mingw32-make.exe: *** [secondtst_EXT_ETIME_] Error 2
+ 
+Fortran EXT_ETIME does not exist. 
+ Change Dir: E:/Program Files/Work/created by me/QT/lapackBinaries/INSTALL
+
+Run Build Command:C:/MinGW/bin/mingw32-make.exe "secondtst_EXT_ETIME"
+Linking Fortran executable secondtst_EXT_ETIME.exe
+CMakeFiles\secondtst_EXT_ETIME.dir/objects.a(second_EXT_ETIME.f.obj):second_EXT_ETIME.f:(.text+0xd): undefined reference to `etime_'
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\secondtst_EXT_ETIME.dir\build.make:97: recipe for target 'secondtst_EXT_ETIME.exe' failed
+mingw32-make.exe[3]: *** [secondtst_EXT_ETIME.exe] Error 1
+CMakeFiles\Makefile2:62: recipe for target 'CMakeFiles/secondtst_EXT_ETIME.dir/all' failed
+mingw32-make.exe[2]: *** [CMakeFiles/secondtst_EXT_ETIME.dir/all] Error 2
+CMakeFiles\Makefile2:75: recipe for target 'CMakeFiles/secondtst_EXT_ETIME.dir/rule' failed
+mingw32-make.exe[1]: *** [CMakeFiles/secondtst_EXT_ETIME.dir/rule] Error 2
+Makefile:108: recipe for target 'secondtst_EXT_ETIME' failed
+mingw32-make.exe: *** [secondtst_EXT_ETIME] Error 2
+ 
+Fortran EXT_ETIME_ does not exist. 
+ Change Dir: E:/Program Files/Work/created by me/QT/lapackBinaries/INSTALL
+
+Run Build Command:C:/MinGW/bin/mingw32-make.exe "secondtst_EXT_ETIME_"
+Linking Fortran executable secondtst_EXT_ETIME_.exe
+CMakeFiles\secondtst_EXT_ETIME_.dir/objects.a(second_EXT_ETIME_.f.obj):second_EXT_ETIME_.f:(.text+0xd): undefined reference to `etime__'
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\secondtst_EXT_ETIME_.dir\build.make:97: recipe for target 'secondtst_EXT_ETIME_.exe' failed
+mingw32-make.exe[3]: *** [secondtst_EXT_ETIME_.exe] Error 1
+CMakeFiles\Makefile2:98: recipe for target 'CMakeFiles/secondtst_EXT_ETIME_.dir/all' failed
+mingw32-make.exe[2]: *** [CMakeFiles/secondtst_EXT_ETIME_.dir/all] Error 2
+CMakeFiles\Makefile2:111: recipe for target 'CMakeFiles/secondtst_EXT_ETIME_.dir/rule' failed
+mingw32-make.exe[1]: *** [CMakeFiles/secondtst_EXT_ETIME_.dir/rule] Error 2
+Makefile:121: recipe for target 'secondtst_EXT_ETIME_' failed
+mingw32-make.exe: *** [secondtst_EXT_ETIME_] Error 2
+ 
+Fortran EXT_ETIME does not exist. 
+ Change Dir: E:/Program Files/Work/created by me/QT/lapackBinaries/INSTALL
+
+Run Build Command:C:/MinGW/bin/mingw32-make.exe "secondtst_EXT_ETIME"
+Linking Fortran executable secondtst_EXT_ETIME.exe
+CMakeFiles\secondtst_EXT_ETIME.dir/objects.a(second_EXT_ETIME.f.obj):second_EXT_ETIME.f:(.text+0xd): undefined reference to `etime_'
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\secondtst_EXT_ETIME.dir\build.make:97: recipe for target 'secondtst_EXT_ETIME.exe' failed
+mingw32-make.exe[3]: *** [secondtst_EXT_ETIME.exe] Error 1
+CMakeFiles\Makefile2:62: recipe for target 'CMakeFiles/secondtst_EXT_ETIME.dir/all' failed
+mingw32-make.exe[2]: *** [CMakeFiles/secondtst_EXT_ETIME.dir/all] Error 2
+CMakeFiles\Makefile2:75: recipe for target 'CMakeFiles/secondtst_EXT_ETIME.dir/rule' failed
+mingw32-make.exe[1]: *** [CMakeFiles/secondtst_EXT_ETIME.dir/rule] Error 2
+Makefile:108: recipe for target 'secondtst_EXT_ETIME' failed
+mingw32-make.exe: *** [secondtst_EXT_ETIME] Error 2
+ 
+Fortran EXT_ETIME_ does not exist. 
+ Change Dir: E:/Program Files/Work/created by me/QT/lapackBinaries/INSTALL
+
+Run Build Command:C:/MinGW/bin/mingw32-make.exe "secondtst_EXT_ETIME_"
+Linking Fortran executable secondtst_EXT_ETIME_.exe
+CMakeFiles\secondtst_EXT_ETIME_.dir/objects.a(second_EXT_ETIME_.f.obj):second_EXT_ETIME_.f:(.text+0xd): undefined reference to `etime__'
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\secondtst_EXT_ETIME_.dir\build.make:97: recipe for target 'secondtst_EXT_ETIME_.exe' failed
+mingw32-make.exe[3]: *** [secondtst_EXT_ETIME_.exe] Error 1
+CMakeFiles\Makefile2:98: recipe for target 'CMakeFiles/secondtst_EXT_ETIME_.dir/all' failed
+mingw32-make.exe[2]: *** [CMakeFiles/secondtst_EXT_ETIME_.dir/all] Error 2
+CMakeFiles\Makefile2:111: recipe for target 'CMakeFiles/secondtst_EXT_ETIME_.dir/rule' failed
+mingw32-make.exe[1]: *** [CMakeFiles/secondtst_EXT_ETIME_.dir/rule] Error 2
+Makefile:121: recipe for target 'secondtst_EXT_ETIME_' failed
+mingw32-make.exe: *** [secondtst_EXT_ETIME_] Error 2
+ 

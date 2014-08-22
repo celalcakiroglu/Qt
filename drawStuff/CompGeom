@@ -1,0 +1,5 @@
+Lemma 1.2.1 : Every polygon must have at least one strictly convex vertex.
+
+Diagonal: A diagonal of a polygon P is a line segment between two of its vertices a and b such that the intersection of the closed segment ab with the boundary of P is exactly the set {a,b}.
+
+Lemma 1.2.2 : Every polygon with number pf vertices n >=4 has a diagonal
