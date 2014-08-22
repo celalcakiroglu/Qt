@@ -46,6 +46,7 @@ private:
     qreal cnvsWidth, cnvsHeight;
     int numXTicks, numYTicks;
     qreal CSysOriginX, CSysOriginY;
+    qreal mappedXInterval, mappedYInterval;
 };
 
 #endif // CANVAS_H

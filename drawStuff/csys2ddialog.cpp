@@ -68,8 +68,8 @@ void Csys2Ddialog::assignValues()
     QString originYStr=originYEdt->text();
     QString xLimStr = xLimEdt->text();
     QString yLimStr = yLimEdt->text();
-    QString xStepStr = xLimEdt->text();
-    QString yStepStr = yLimEdt->text();
+    QString xStepStr = xStepEdt->text();
+    QString yStepStr = yStepEdt->text();
     originXF = originXStr.toFloat();
     originYF = originYStr.toFloat();
     xLimF = xLimStr.toFloat();

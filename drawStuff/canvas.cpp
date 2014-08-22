@@ -171,19 +171,34 @@ void Canvas::drawShape()
                 QPointF origin(CSysOriginX, CSysOriginY);
                 numXTicks=int(csys2DDia->xLimF/csys2DDia->xStepF);
                 numYTicks=int(csys2DDia->yLimF/csys2DDia->yStepF);
+                QVector<Shape2D> xTickList; QVector<Shape2D> yTickList;
+                xTickList.resize(numXTicks);yTickList.resize(numYTicks);
                 qDebug()<<"number of xticks is: "<<numXTicks;
                 qreal xAxisLength = abs(cnvsWidth-origin.x())-0.05*cnvsWidth;
                 qreal yAxisLength = abs(origin.y())-0.05*cnvsHeight;
                 qreal tickSize=cnvsHeight*0.005;
+                mappedXInterval=(csys2DDia->xStepF * xAxisLength)/(csys2DDia->xLimF+csys2DDia->xStepF);
+                mappedYInterval=(csys2DDia->yStepF * yAxisLength)/(csys2DDia->yLimF+csys2DDia->yStepF);
                 QPointF xEnd(origin.x()+xAxisLength,origin.y());
                 QPointF yEnd(origin.x(),origin.y()-yAxisLength);
                 xAxis.getLine()->setP1(origin);xAxis.getLine()->setP2(xEnd);
                 yAxis.getLine()->setP1(origin);yAxis.getLine()->setP2(yEnd);
                 shapeList.append(xAxis);shapeList.append(yAxis);
                 for(int t=0;t<numXTicks;t++){
-                    Shape2D vertTick;
-                    vertTick.partOfCSys=true;
-                    vertTick.setShape(Line);
+                    xTickList[t].partOfCSys=true;
+                    xTickList[t].setShape(Line);
+                    QPointF tickTop(CSysOriginX + (t+1)*mappedXInterval,CSysOriginY-tickSize/2);
+                    QPointF tickBottom(CSysOriginX + (t+1)*mappedXInterval,CSysOriginY+tickSize/2);
+                    xTickList[t].getLine()->setP1(tickTop);xTickList[t].getLine()->setP2(tickBottom);
+                    shapeList.append(xTickList[t]);
+                }
+                for(int t=0;t<numYTicks;t++){
+                    yTickList[t].partOfCSys=true;
+                    yTickList[t].setShape(Line);
+                    QPointF tickLeft(CSysOriginX - tickSize/2,CSysOriginY-(t+1)*mappedYInterval);
+                    QPointF tickRight(CSysOriginX + tickSize/2,CSysOriginY-(t+1)*mappedYInterval);
+                    yTickList[t].getLine()->setP1(tickLeft);yTickList[t].getLine()->setP2(tickRight);
+                    shapeList.append(yTickList[t]);
                 }
                 break;
             }
