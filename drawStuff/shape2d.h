@@ -44,6 +44,7 @@ public:
     Shape* getShape();
     QColor *getFarbe();
     qreal *getDicke();
+    bool* isPartOfCSys();
     void setShape(Shape shape);
     void setFarbe(QColor farbe);
     void setDicke(qreal dicke);

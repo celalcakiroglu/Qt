@@ -167,13 +167,12 @@ void Canvas::drawShape()
                 xAxis.partOfCSys=true;yAxis.partOfCSys=true;
                 xAxis.setShape(Line);yAxis.setShape(Line);
                 CSysOriginX = csys2DDia->originXF*cnvsWidth*0.01;
-                CSysOriginY = csys2DDia->originYF*cnvsWidth*0.01;
+                CSysOriginY = csys2DDia->originYF*cnvsHeight*0.01;
                 QPointF origin(CSysOriginX, CSysOriginY);
                 numXTicks=int(csys2DDia->xLimF/csys2DDia->xStepF);
                 numYTicks=int(csys2DDia->yLimF/csys2DDia->yStepF);
                 QVector<Shape2D> xTickList; QVector<Shape2D> yTickList;
                 xTickList.resize(numXTicks);yTickList.resize(numYTicks);
-                qDebug()<<"number of xticks is: "<<numXTicks;
                 qreal xAxisLength = abs(cnvsWidth-origin.x())-0.05*cnvsWidth;
                 qreal yAxisLength = abs(origin.y())-0.05*cnvsHeight;
                 qreal tickSize=cnvsHeight*0.005;
@@ -243,9 +242,32 @@ void Canvas::undoLastPart()
     {
         if(*shapeList.last().getShape() == Line)
         {
-            if(polyLineSize > 0) polyLineSize -=1;
-            redoShapeList.push(shapeList.last());
-            shapeList.removeLast();
+            if(*shapeList.last().isPartOfCSys())
+            {
+                numCSys2DElements = numXTicks + numYTicks + 2; //2 is because of the x and y axes
+                /*for(int k=0;k<numCSys2DElements;k++)
+                {
+                    redoShapeList.push(shapeList.last());
+                    shapeList.removeLast();
+                }*/
+                while(numCSys2DElements-1  > 0)
+                {
+                    redoShapeList.push(shapeList.last());
+                    shapeList.removeLast();
+                    numCSys2DElements -= 1;
+                }
+                /*while(numCSys2DElements  > 0)
+                {
+                    redoShapeList.append(shapeList.pop_back(););
+                    shapeList.removeLast();
+                    numCSys2DElements -= 1;
+                }*/
+            }
+            else if(polyLineSize > 0) polyLineSize -=1;
+            {
+                redoShapeList.push(shapeList.last());
+                shapeList.removeLast();
+            }
         }
     }
     update();
@@ -253,7 +275,20 @@ void Canvas::undoLastPart()
 
 void Canvas::redoLastPart()
 {
-    if(!redoShapeList.isEmpty())shapeList.append(redoShapeList.pop());
+    if(!redoShapeList.isEmpty())
+    {
+        if(*redoShapeList.last().isPartOfCSys())
+        {
+            numCSys2DElements = numXTicks + numYTicks + 2;
+            //for(int k=0;k<numCSys2DElements;k++)shapeList.append(redoShapeList.pop());
+            while(numCSys2DElements > 0)
+            {
+                shapeList.append(redoShapeList.pop());
+                numCSys2DElements -= 1;
+            }
+        }
+        else shapeList.append(redoShapeList.pop());
+    }
     update();
 }
 

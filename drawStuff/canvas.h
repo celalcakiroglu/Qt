@@ -10,7 +10,7 @@ class Canvas : public QWidget
     Q_OBJECT
 public:
     explicit Canvas(QWidget *parent = 0);
-    QList<Shape2D> shapeList;
+    QList<Shape2D> shapeList;//You might consider changing this to stack
     QStack<Shape2D> redoShapeList;
     Shape getShape();
     LineDialog *getLineDia();
@@ -44,7 +44,7 @@ private:
     QColor lineColor;//do we need this?
     qreal lineWidth;//do we need this?
     qreal cnvsWidth, cnvsHeight;
-    int numXTicks, numYTicks;
+    int numXTicks, numYTicks, numCSys2DElements;//numCSys2DElements is used for undoing the entire coordinate system
     qreal CSysOriginX, CSysOriginY;
     qreal mappedXInterval, mappedYInterval;
 };

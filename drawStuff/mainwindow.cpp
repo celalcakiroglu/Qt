@@ -15,5 +15,5 @@ MainWindow::MainWindow(QWidget *parent) :
     redoAct->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_F));
     connect(redoAct, SIGNAL(triggered()),window->getCanvas(),SLOT(redoLastPart()));
     setCentralWidget(window);
-    setFixedHeight(750);setFixedWidth(1000);
+    setFixedHeight(1000);setFixedWidth(1700);
 }
